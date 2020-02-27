@@ -11,6 +11,7 @@ const initialState = {
 
 
 const UpdateMovie = (props) => {
+    console.log(props)
     const [movie, setMovie] = useState(initialState);
 
     const handleChange = e => {
