@@ -6,7 +6,6 @@ const initialState = {
     title: '',
     director: '',
     metascore: '',
-    stars: []
 }
 
 
@@ -45,16 +44,14 @@ const UpdateMovie = (props) => {
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="title"></label>
-            <input type="text" name="title" onChange={handleChange} placeholder="title" />
+            <input type="text" name="title" onChange={handleChange} placeholder="Title" />
 
-            <label htmlFor="title"></label>
-            <input type="text" name="title" onChange={handleChange} placeholder="title" />
+            <label htmlFor="director"></label>
+            <input type="text" name="director" onChange={handleChange} placeholder="Director" />
 
-            <label htmlFor="title"></label>
-            <input type="text" name="title" onChange={handleChange} placeholder="title" />
+            <label htmlFor="metascore"></label>
+            <input type="text" name="metascore" onChange={handleChange} placeholder="Metascore" />
 
-            <label htmlFor="title"></label>
-            <input type="text" name="title" onChange={handleChange} placeholder="title" />
             <button type="submit">Update Movie</button>
         </form>
     )

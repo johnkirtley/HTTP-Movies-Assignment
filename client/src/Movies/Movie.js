@@ -22,7 +22,7 @@ function Movie(props) {
     axios
       .delete(`http://localhost:5000/api/movies/${props.match.params.id}`)
       .then(res => {
-        setMovie(movie);
+        props.setMovieList([...props.movieList])
         props.history.push("/");
       })
   }
